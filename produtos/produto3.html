@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Loja de Gunpla</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?" />
+
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+
+    <!-- fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/7a95873148.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body onload="transformar2()">
+    <header>
+      <div class="col-lg-3 col-sm-4 logo">
+        <h1>Logo</h1>
+      </div>
+
+      <div class="col-lg-6 col-sm-6 barraPesquisa">
+        <input type="text" class="pesquisa" />
+        <button><i class="fa-solid fa-magnifying-glass"></i></button>
+      </div>
+
+      <div class="col-lg-3 col-sm-12 servicos">
+        <p>Conta</p>
+        <div>
+          <i class="fa-solid fa-cart-shopping"></i>
+          <p>Carrinho</p>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="produtoContainer">
+        <div class="imagemProduto">
+          <img src="../img/gyan.jpg" width="600px" alt="" srcset="" />
+        </div>
+        <div class="infoProduto">
+          <p class="nomeProduto">1/144 HG Gyan</p>
+          <div class="precoProduto">
+            <p>Em dolar: $<span class="dolar">55.00</span></p>
+            <p>Em Real: R$ <span class="real"></span></p>
+          </div>
+          <div class="freteProduto">
+            <div class="cepProduto">
+              <p>CEP:</p>
+              <input
+                class="form-control"
+                type="text"
+                placeholder="XXXXX-XXX"
+                aria-label="default input example"
+                id="cep"
+              />
+              <button onclick="procuraCEP()" class="btn btn-outline-primary">
+                Calcular
+              </button>
+            </div>
+            <p>Frete: R$ <span id="valor"></span></p>
+          </div>
+
+          <div class="finalProduto">
+            <p>Total: R$<span id="total"></span></p>
+            <button class="btn btn-outline-primary">Comprar</button>
+        </div>
+        </div>
+      </div>
+    </main>
+  </body>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"
+  ></script>
+  <script src="../script.js"></script>
+</html>

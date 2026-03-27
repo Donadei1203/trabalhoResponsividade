@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Loja de Gunpla</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?" />
+    
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    
+    <!-- fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/7a95873148.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body
+    onload="
+     transformar1();
+    "
+  >
+    <header>
+      <div class="col-lg-3 col-sm-4 logo">
+        <h1>Logo</h1>
+      </div>
+
+      <div class="col-lg-6 col-sm-6 barraPesquisa">
+        <input type="text" class="pesquisa">
+        <button><i class="fa-solid fa-magnifying-glass"></i></button>
+      </div>
+
+      <div class="col-lg-3 col-sm-12 servicos">
+        <p>Conta</p>
+        <div>
+          <i class="fa-solid fa-cart-shopping"></i>
+          <p>Carrinho</p>
+        </div>
+      </div>
+
+    </header>
+    <main>
+      <h2>Produtos</h2>
+      <!-- tabela -->
+      <div class="produtos">
+        <!-- linha -->
+        <div class="linha">
+
+          <a href="produtos/produto1.html">
+            <div class="cardProduto">
+              <img src="img/wingStrike.jpg" alt="" width="200px" />
+              <p class="nomeProduto">HG 1/144 Wing Strike Gundam</p>
+              <div>
+                <p class="dolar" id="dolar1">35.00</p>
+                <p class="real" id="real1"></p>
+              </div>
+            </div>
+          </a>
+
+          <a href="produtos/produto2.html">
+
+            <div class="cardProduto" >
+              <img src="img/hyaku.jpg" alt="" height="200px" width="200px" />
+              <p class="nomeProduto">1/100 MG Hyaku-Shiki</p>
+              <div>
+                <p class="dolar" id="dolar2">45.00</p>
+                <p class="real" id="real2"></p>
+              </div>
+            </div>
+          </a>
+
+          <a href="produtos/produto3.html">
+
+            <div class="cardProduto">
+              <img src="img/gyan.jpg" alt="" height="200px" width="200px" />
+            <p class="nomeProduto">1/100 MG Gyan</p>
+            <div>
+              <p class="dolar" id="dolar3">55.00</p>
+              <p class="real" id="real3"></p>
+            </div>
+          </div>
+        </a>
+          
+        <a href="produtos/produto4.html">
+
+          <div class="cardProduto" >
+            <img src="img/rx78.jpg" alt="" height="200px" width="200px" />
+            <p class="nomeProduto">1/144 RG RX-78 Gundam 2.0</p>
+            <div>
+              <p class="dolar" id="dolar4">65.00</p>
+              <p class="real" id="real4"></p>
+            </div>    
+          </div>
+        </a>
+        
+        </div>
+      </div>
+    </main>
+  </body>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+</html>
